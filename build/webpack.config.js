@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const resolve = (current) => path.resolve(__dirname, '..' , current)
 
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV !== 'development'
 
 module.exports = {
     entry: resolve('./src/main.tsx'),

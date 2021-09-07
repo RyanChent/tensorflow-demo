@@ -14,7 +14,7 @@ module.exports = merge(webpackBase, {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/[name]-[contanhash:7].css'
+            filename: 'css/[name]-[contenthash:6].css'
         })
     ],
     optimization: {
