@@ -10,7 +10,7 @@ const tfHistory = createHashHistory({
 
 const tfRouter = () => <Router history={tfHistory}>
     <TFLayout>
-        <Route exact path="/home" component={Home} />
+        <Route path="/" component={Home} />
     </TFLayout>
 </Router>
 

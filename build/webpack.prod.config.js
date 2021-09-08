@@ -8,7 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const webpackBase = require('./webpack.config')
 
-module.exports = merge(webpackBase, {
+module.exports = env => merge(webpackBase(env), {
     mode: 'production',
     devtool: false,
     plugins: [

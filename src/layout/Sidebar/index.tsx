@@ -3,22 +3,22 @@ import { Layout, Menu } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import Logo from '@/components/logo'
 import { Link } from 'react-router-dom'
-
-const { Sider } = Layout
+import './style'
 
 class tfSider extends React.Component {
+
     render() {
-        return <Sider
+        return <Layout.Sider
             breakpoint="lg"
             collapsedWidth="0"
         >
             <Logo />
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['/home']}>
-                <Menu.Item key="/home" icon={<UserOutlined />}>
-                    <Link to="/home">Home</Link>
+            <Menu theme="dark" mode="inline" defaultSelectedKeys={['/']}>
+                <Menu.Item key="/" icon={<UserOutlined />}>
+                    <Link to="/">Home</Link>
                 </Menu.Item>
             </Menu>
-        </Sider>
+        </Layout.Sider>
     }
 }
 

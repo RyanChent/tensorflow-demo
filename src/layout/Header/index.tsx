@@ -1,13 +1,12 @@
 import React from 'react'
-import { Layout } from 'antd'
-
-const { Header } = Layout
+import { Layout, Avatar } from 'antd'
+import './style'
 
 class tfHeader extends React.Component {
     render() {
-        return <Header>
-            Header
-        </Header>
+        return <Layout.Header className="tf-layout-header">
+            <Avatar size={25} style={{ color: '#f56a00', backgroundColor: '#fde3cf' }}>TF</Avatar>
+        </Layout.Header>
     }
 }
 
