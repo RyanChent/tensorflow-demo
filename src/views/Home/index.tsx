@@ -1,12 +1,10 @@
 import React from "react";
 import { Button } from 'antd'
-import { Link } from "react-router-dom";
+import './style'
 
 const Home: React.FC = (props) => {
   return <section className="tf-dashboard">
-    <Button type="primary">
-        <Link to="/">返回首页</Link>
-    </Button>
+    <Button type="primary">返回</Button>
   </section>
 }
 
